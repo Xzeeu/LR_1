@@ -16,7 +16,14 @@ vector<string> myVector;
 
 void read()
 {
-
+    in.open("text.txt");
+    if (in.is_open())
+    {
+        while (getline(in, str))
+        {
+            myVector.push_back(str);
+        }
+    }
 }
 
 void out1()
